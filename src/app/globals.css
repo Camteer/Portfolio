@@ -11,6 +11,21 @@ html {
   scroll-behavior: smooth;
 }
 
+::-webkit-scrollbar {
+  width: 5px;
+  background: grey;
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: var(--foreground);
+  border-radius: 25px;
+}
+
+::-webkit-scrollbar-track {
+  -webkit-box-shadow: 5px 5px 5px -5px rgba(34, 60, 80, 0.2) inset;
+  
+}
+
 h1,
 h2,
 h3,
@@ -19,7 +34,7 @@ h5,
 h6,
 p,
 ul,
-ol,
+ol, 
 li {
   margin: 0;
   padding: 0;
@@ -43,20 +58,44 @@ ol {
 :root {
   --background: #ffffff;
   --foreground: #171717;
+  --background-image: rgba(255, 255, 255, 0.507);
+  
+  --container-width: min(1440px, 100%)
 }
 
 @media (prefers-color-scheme: dark) {
   :root {
+    --background-image: rgba(0, 0, 0, 0.74);
     --background: #0a0a0a;
     --foreground: #ededed;
+    --container-width: min(1440px, 100%)
   }
 }
 
 body {
   color: var(--foreground);
-  background: var(--background);
+  background: url('../page/portfolio-bg.avif'), var(--background-image);
+  background-blend-mode: color;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
   font-family: Arial, Helvetica, sans-serif;
   margin: 0;
+}
+
+.container {
+  min-width: var(--container-w  idth);
+  background: var(--background);
+}
+
+.section {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  position: relative;
+  counter-increment: test;
+	z-index: calc(0-counter(test));
+  transition: opacity 2s ease;
 }
 
 @layer utilities {

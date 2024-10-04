@@ -1,6 +1,7 @@
 import React, { FC } from "react";
 import style from "./header.module.css";
 import { cn } from "@/utils/utils";
+import { Container } from "../container";
 
 export const Header: FC = ({}) => {
   return (
@@ -12,16 +13,55 @@ export const Header: FC = ({}) => {
             <li>/me</li>
           </ul>
         </div>
-        <div className={cn("flex flex-col p-5")}>
-          <p className={cn(style.headerP)}>Frontend-</p>
-          <p className={cn(style.headerP, "text-end")}>Developer</p>
-          <p className={cn(style.headerNot)}>
-            I'm Kyle Craven, a digital designer and creative Webflow developer —
-            I collaborate with brands globally to design impactful,
-            mission-focused websites that drive results and achieve business
-            goals
-          </p>
-        </div>
+
+        <Container>
+          <div className={cn("flex flex-col")}>
+            <p className={cn(style.headerP)}>Frontend-</p>
+            <p className={cn(style.headerP, "text-end")}>Developer</p>
+            <p className={cn(style.headerNot)}>
+              I'm Kyle Craven, a digital designer and creative Webflow developer
+              — I collaborate with brands globally to design impactful,
+              mission-focused websites that drive results and achieve business
+              goals
+            </p>
+          </div>
+        </Container>
+        <Container>
+          <div className={cn("flex flex-col")}>
+            <p className={cn(style.headerP)}>Frontend-</p>
+            <p className={cn(style.headerP, "text-end")}>Developer</p>
+            <p className={cn(style.headerNot)}>
+              I'm Kyle Craven, a digital designer and creative Webflow developer
+              — I collaborate with brands globally to design impactful,
+              mission-focused websites that drive results and achieve business
+              goals
+            </p>
+          </div>
+        </Container>
+        <Container>
+          <div className={cn("flex flex-col")}>
+            <p className={cn(style.headerP)}>Frontend-</p>
+            <p className={cn(style.headerP, "text-end")}>Developer</p>
+            <p className={cn(style.headerNot)}>
+              I'm Kyle Craven, a digital designer and creative Webflow developer
+              — I collaborate with brands globally to design impactful,
+              mission-focused websites that drive results and achieve business
+              goals
+            </p>
+          </div>
+        </Container>
+        <Container>
+          <div className={cn("flex flex-col")}>
+            <p className={cn(style.headerP)}>Frontend-</p>
+            <p className={cn(style.headerP, "text-end")}>Developer</p>
+            <p className={cn(style.headerNot)}>
+              I'm Kyle Craven, a digital designer and creative Webflow developer
+              — I collaborate with brands globally to design impactful,
+              mission-focused websites that drive results and achieve business
+              goals
+            </p>
+          </div>
+        </Container>
       </header>
     </>
   );
