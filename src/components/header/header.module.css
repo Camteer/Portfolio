@@ -1,0 +1,30 @@
+.header {
+  font-size: 20px;
+  line-height: 20px;
+  font-family: var(--font-main);
+}
+
+.headerNav {
+  position: sticky;
+  top: 0;
+  padding: 20px;
+  background-color: var(--background);
+  border-bottom: 2px solid;
+
+  padding-block-end: 10px;
+  border-color: var(--foreground);
+}
+
+.headerP {
+  font-size: clamp(3.75rem, 0.4126rem + 14.2395vw, 17.5rem);
+  font-weight: 900;
+  line-height: normal;
+}
+
+.headerNot {
+  margin-block-start: 20px;
+  width: 100%;
+  line-height: normal;
+  font-size: clamp(1.125rem, 1.0036rem + 0.5178vw, 1.625rem);
+  max-width: min(100%, 500px);
+}
