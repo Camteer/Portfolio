@@ -26,42 +26,7 @@ export const Header: FC = ({}) => {
             </p>
           </div>
         </Container>
-        <Container>
-          <div className={cn("flex flex-col")}>
-            <p className={cn(style.headerP)}>Frontend-</p>
-            <p className={cn(style.headerP, "text-end")}>Developer</p>
-            <p className={cn(style.headerNot)}>
-              I'm Kyle Craven, a digital designer and creative Webflow developer
-              — I collaborate with brands globally to design impactful,
-              mission-focused websites that drive results and achieve business
-              goals
-            </p>
-          </div>
-        </Container>
-        <Container>
-          <div className={cn("flex flex-col")}>
-            <p className={cn(style.headerP)}>Frontend-</p>
-            <p className={cn(style.headerP, "text-end")}>Developer</p>
-            <p className={cn(style.headerNot)}>
-              I'm Kyle Craven, a digital designer and creative Webflow developer
-              — I collaborate with brands globally to design impactful,
-              mission-focused websites that drive results and achieve business
-              goals
-            </p>
-          </div>
-        </Container>
-        <Container>
-          <div className={cn("flex flex-col")}>
-            <p className={cn(style.headerP)}>Frontend-</p>
-            <p className={cn(style.headerP, "text-end")}>Developer</p>
-            <p className={cn(style.headerNot)}>
-              I'm Kyle Craven, a digital designer and creative Webflow developer
-              — I collaborate with brands globally to design impactful,
-              mission-focused websites that drive results and achieve business
-              goals
-            </p>
-          </div>
-        </Container>
+        
       </header>
     </>
   );
