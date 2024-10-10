@@ -23,8 +23,8 @@ export const Container: FC<ContainerProps> = ({ children, className }) => {
 `;
   return (
     <>
-      <Slide  direction="down" className={cn("section")}>
-        <div className={cn("container p-2 pr-4 mb-10")}> {children}</div>
+      <Slide  direction="up" className={cn("section z-0")}>
+        <div className={cn("p-2 pr-4 container")}> {children}</div>
       </Slide>
     </>
   );

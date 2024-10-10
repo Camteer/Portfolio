@@ -56,17 +56,19 @@ ol {
 }
 
 :root {
-  --background: #ffffff;
+  --background: #ffffffcb;
   --foreground: #171717;
+  --background-nav: #ffffff;
   --background-image: rgba(255, 255, 255, 0.507);
-  
   --container-width: min(1440px, 100%)
 }
 
 @media (prefers-color-scheme: dark) {
   :root {
     --background-image: rgba(0, 0, 0, 0.74);
-    --background: #0a0a0a;
+    
+    --background-nav: #000000;
+    --background: #0a0a0a71;
     --foreground: #ededed;
     --container-width: min(1440px, 100%)
   }
@@ -84,8 +86,13 @@ body {
 }
 
 .container {
-  min-width: var(--container-w  idth);
+  min-width: var(--container-w);
   background: var(--background);
+  display: flex;
+  align-items: center;
+  height: 100vh;
+  
+ 
 }
 
 .section {
@@ -93,9 +100,9 @@ body {
   display: flex;
   justify-content: center;
   position: relative;
-  counter-increment: test;
-	z-index: calc(0-counter(test));
   transition: opacity 2s ease;
+
+  
 }
 
 @layer utilities {

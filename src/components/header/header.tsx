@@ -7,18 +7,17 @@ export const Header: FC = ({}) => {
   return (
     <>
       <header className={cn(style.header)}>
-        <div className={cn(style.headerNav, "flex justify-between")}>
+        <div className={cn(style.headerNav, "flex justify-between ")}>
           <span> {"Eugene Pavlov"}</span>
-          <ul className={cn("flex justify-between gap-10")}>
-            <li>/me</li>
-          </ul>
+          <ul className={cn("flex justify-between gap-10")}></ul>
         </div>
-
-        <Container>
-          <div className={cn("flex flex-col")}>
+      </header>
+      <main>
+        <Container className="h-screen">
+          <div className={cn("flex flex-col h-full justify-ce")}>
             <p className={cn(style.headerP)}>Frontend-</p>
             <p className={cn(style.headerP, "text-end")}>Developer</p>
-            <p className={cn(style.headerNot)}>
+            <p className={cn(style.headerNot, "self-end")}>
               I'm Kyle Craven, a digital designer and creative Webflow developer
               — I collaborate with brands globally to design impactful,
               mission-focused websites that drive results and achieve business
@@ -26,8 +25,7 @@ export const Header: FC = ({}) => {
             </p>
           </div>
         </Container>
-        
-      </header>
+      </main>
     </>
   );
 };
