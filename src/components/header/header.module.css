@@ -1,16 +1,16 @@
 .header {
   font-size: 20px;
+  position: sticky;
+  top: 0;
+  z-index: 10;
   line-height: 20px;
   font-family: var(--font-main);
 }
 
 .headerNav {
-  position: absolute;
-  top: 0;
   padding: 20px;
   background-color: var(--background-nav);
   border-bottom: 2px solid;
-  z-index: 10;
   width: 100%;
   border-color: var(--foreground);  
 }

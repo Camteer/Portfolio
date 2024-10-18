@@ -1,5 +1,14 @@
-import React, { FC } from 'react';
+import React, { FC, ReactElement } from "react";
 
-export const Section: FC = ({}) => {
-  return (<></>);
+type SectionProps = {
+  children?: ReactElement;
+  className?: string;
+};
+
+export const Section: FC<SectionProps> = ({children, className}) => {
+  return (
+  <>
+    {children}
+  </>
+  );
 };

@@ -9,7 +9,7 @@ export const Main: FC = ({}) => {
   return (
     <>
       <main>
-        <Container className="h-screen">
+        <Container className="">
           <div className={cn("flex flex-col h-full justify-center w-full")}>
             <Fade duration={150} delay={300} cascade className={cn(style.headerP)}>Frontend-</Fade>
             <Fade duration={150} cascade className={cn(style.headerP, "text-end")}>Developer</Fade>

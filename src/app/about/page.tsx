@@ -1,11 +1,13 @@
-import { Header } from "@/components/header/header";
+import { About } from "@/components";
 
 export default function AboutPage() {
   return (
     <>
-      <div className="h-[14000px]">
-        <Header></Header>
+      
+      <div className="h-[1500px]">
+        <About></About>
       </div>
+      
     </>
   );
 }
