@@ -1,10 +1,9 @@
-import { Header } from "@/components/header/header";
+import { Main } from "@/components";
 
-
-export default function Home() {
+export default function MainPage() {
   return (
     <div className="">
-      <Header></Header>
+      <Main></Main>
     </div>
   );
 }

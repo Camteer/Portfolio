@@ -68,7 +68,7 @@ ol {
     --background-image: rgba(0, 0, 0, 0.74);
     
     --background-nav: #000000;
-    --background: #0a0a0a71;
+    --background: #000000a1;
     --foreground: #ededed;
     --container-width: min(1440px, 100%)
   }
@@ -102,7 +102,6 @@ body {
   position: relative;
   transition: opacity 2s ease;
 
-  
 }
 
 @layer utilities {

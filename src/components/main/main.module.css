@@ -1,0 +1,15 @@
+.headerP {
+  font-size: clamp(3.75rem, 0.4126rem + 14.2395vw, 17.5rem);
+  font-weight: 900;
+  line-height: normal;
+}
+
+.headerNot {
+  margin-block-start: 20px;
+  display: flex !important;
+  flex-wrap: wrap;
+  width: 100%;
+  line-height: normal;
+  font-size: clamp(1.125rem, 1.0036rem + 0.5178vw, 1.625rem);
+  max-width: min(100%, 700px);
+}

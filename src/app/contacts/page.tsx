@@ -1,6 +1,6 @@
 import { Header } from "@/components/header/header";
 
-export default function AboutPage() {
+export default function ContactsPage() {
   return (
     <>
       <div className="h-[14000px]">

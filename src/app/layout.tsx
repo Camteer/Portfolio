@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import localFont from "next/font/local";
 import { Raleway } from "next/font/google";
 import "./globals.css";
+import { Header } from "@/components";
 
 const raleway = Raleway({
   subsets: ["latin"],
@@ -37,6 +38,7 @@ export default function RootLayout({
       <body
         className={`${geistSans.variable} ${geistMono.variable} ${raleway.variable} antialiased`}
       >
+        <Header></Header>
         {children}
       </body>
     </html>
