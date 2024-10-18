@@ -1,9 +1,8 @@
-
 .headerP {
   font-size: clamp(3.75rem, 0.4126rem + 14.2395vw, 17.5rem);
   font-weight: 900;
-
   line-height: normal;
+  font-family: var(--fonts-montserrat);
 }
 
 .headerNot {

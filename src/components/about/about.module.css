@@ -1,0 +1,49 @@
+.aboutMe { 
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(4, 1fr);
+  margin-block-start: 20px;
+  gap: 20px;
+  grid-template-areas:
+  "avatar description description"
+  "avatar description  description"
+  "avatar description  description"
+  ". description  description";
+}
+
+.aboutMeAvatar {
+  grid-area: avatar;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  
+}
+
+.aboutMeDescription {
+  grid-area: description;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.contacts { 
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 15px;
+}
+
+.contacts div::before {
+  content: '';
+  position: absolute;
+  min-width: 10px;
+  min-height: 10px;
+  left: -20px;
+  top: 7px;
+  border-right: 1px solid red;
+  border-top: 1px solid red;
+  rotate: 45deg;
+}
+.contacts div {
+  position: relative;
+  margin-inline-start: 20px;
+}

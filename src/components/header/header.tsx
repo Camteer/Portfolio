@@ -10,7 +10,7 @@ export const Header: FC = ({}) => {
   return (
     <>
       <header className={cn(style.header)}>
-        <div className={cn(style.headerNav, "flex justify-between ")}>
+        <div className={cn(style.headerNav, "flex justify-between font-inter font-normal")}>
           <span>
             <Link href={"/"}>Eugene pavlov</Link>
           </span>

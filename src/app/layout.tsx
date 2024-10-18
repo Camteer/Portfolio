@@ -1,17 +1,39 @@
 import type { Metadata } from "next";
-import localFont from "next/font/local";
-import { Raleway } from "next/font/google";
+import { Inter, Montserrat, Open_Sans, Raleway } from "next/font/google";
 import "./globals.css";
 import { Header } from "@/components";
+
+const montserrat = Montserrat({
+  subsets: ["latin"],
+  display: "swap",
+  variable: "--fonts-montserrat",
+  style: ["normal", "italic"],
+  weight: [ "500", "600", "700", "800", "900"],
+});
+
+const openSans = Open_Sans({
+  subsets: ["latin"],
+  display: "swap",
+  variable: "--fonts-sans",
+  style: ["normal", "italic"],
+  weight: ["400", "500", "600", "700", "800"],
+});
+
+const inter = Inter({
+  subsets: ["latin"],
+  display: "swap",
+  variable: "--fonts-inter",
+  style: ["normal", "italic"],
+  weight: [ "400","500", "600", "700", "800"],
+});
 
 const raleway = Raleway({
   subsets: ["latin"],
   display: "swap",
-  variable: "--fonts-main",
+  variable: "--fonts-raleway",
   style: ["normal", "italic"],
-  weight: ["100", "200", "300", "400", "500", "600", "700", "800", "900"],
-});
-
+  weight: [ "400","500", "600", "700", "800"],
+})
 
 export const metadata: Metadata = {
   title: "Camter",
@@ -25,14 +47,9 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      
-      <body
-      
-        className={`${raleway.variable} `}
-      >
+      <body className={`${montserrat.variable} ${openSans.variable} ${inter.variable} ${raleway.variable}`}>
         <Header></Header>
         {children}
-        
       </body>
     </html>
   );

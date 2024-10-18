@@ -9,7 +9,10 @@ const config: Config = {
   theme: {
     extend: {
       fontFamily: {
-        raleway: ["var(--fonts-main)"]
+        montserrat: ["var(--fonts-montserrat)"],
+        openSans: [ "var(--fonts-sans)"],
+        inter: ["var(--fonts-inter)"],
+        raleway: ["var(--fonts-raleway)"]
       }, 
 
       colors: {
