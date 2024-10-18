@@ -2,6 +2,7 @@
 @tailwind components;
 @tailwind utilities;
 
+
 *,
 *::after,
 *::before {
@@ -9,6 +10,7 @@
 }
 html {
   scroll-behavior: smooth;
+
 }
 
 ::-webkit-scrollbar {
@@ -66,7 +68,6 @@ ol {
 @media (prefers-color-scheme: dark) {
   :root {
     --background-image: rgba(0, 0, 0, 0.74);
-    
     --background-nav: #000000;
     --background: #000000a1;
     --foreground: #ededed;
@@ -81,16 +82,16 @@ body {
   background-repeat: no-repeat;
   background-size: cover;
   background-attachment: fixed;
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: var(--fonts-main);
   margin: 0;
 }
 
 .container {
-  min-width: var(--container-w);
+  min-width: var(--container-width);
   background: var(--background);
   display: flex;
   align-items: center;
-  height: calc(100vh - 62px);
+  min-height: calc(100vh - 62px);
 }
 
 .section {
@@ -100,6 +101,14 @@ body {
   position: relative;
   transition: opacity 2s ease;
 
+}
+
+.section__container {
+  min-width: var(--container-width);
+  background: var(--background);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
 }
 
 @layer utilities {

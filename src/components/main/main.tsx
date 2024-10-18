@@ -9,12 +9,12 @@ export const Main: FC = ({}) => {
   return (
     <>
       <main>
-        <Container className="">
-          <div className={cn("flex flex-col h-full justify-center w-full")}>
-            <Fade duration={150} delay={300} cascade className={cn(style.headerP)}>Frontend-</Fade>
-            <Fade duration={150} cascade className={cn(style.headerP, "text-end")}>Developer</Fade>
+        <Container className="" direction={'down'}>
+          <div className={cn(style.container, "flex flex-col h-full justify-center w-full p-2 pr-4")}>
+            <Fade duration={150}  cascade className={cn(style.headerP)}>Frontend-</Fade>
+            <Fade duration={150} delay={300} cascade className={cn(style.headerP, "text-end")}>Developer</Fade>
 
-            <Fade direction="down" duration={20} cascade className={cn(style.headerNot, "self-end")}>
+            <Fade direction="down" duration={20} cascade className={cn(style.headerNot, "self-end ")}>
               
                 I'm Kyle Craven, a digital designer and creative Webflow
                 developer — I collaborate with brands globally to design

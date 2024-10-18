@@ -8,6 +8,10 @@ const config: Config = {
   ],
   theme: {
     extend: {
+      fontFamily: {
+        raleway: ["var(--fonts-main)"]
+      }, 
+
       colors: {
         background: "var(--background)",
         foreground: "var(--foreground)",

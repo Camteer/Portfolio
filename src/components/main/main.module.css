@@ -1,6 +1,8 @@
+
 .headerP {
   font-size: clamp(3.75rem, 0.4126rem + 14.2395vw, 17.5rem);
   font-weight: 900;
+
   line-height: normal;
 }
 
@@ -12,4 +14,12 @@
   line-height: normal;
   font-size: clamp(1.125rem, 1.0036rem + 0.5178vw, 1.625rem);
   max-width: min(100%, 700px);
+}
+
+.container {
+  min-width: var(--container-width);
+  background: var(--background);
+  display: flex;
+  align-items: center;
+  min-height: calc(100vh - 62px);
 }
