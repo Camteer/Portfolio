@@ -12,7 +12,7 @@ type ContainerProps = {
 export const Container: FC<ContainerProps> = ({ children, className, direction='up' }) => {
   return (
     <>
-      <Slide direction={direction} className={cn(className, "section z-0")}>
+      <Slide  triggerOnce direction={direction} className={cn(className, "section z-0")}>
         {children}
       </Slide>
     </>
