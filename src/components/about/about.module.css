@@ -3,6 +3,7 @@
   grid-template-columns: repeat(3, 1fr);
   grid-template-rows: repeat(4, 1fr);
   margin-block-start: 20px;
+  margin-block-end: 60px;
   gap: 20px;
   grid-template-areas:
     ". description description"
@@ -13,7 +14,7 @@
 
 .aboutMeAvatar {
   grid-area: avatar;
-  display: flex;
+  display: grid;
   justify-content: center;
   align-items: center;
 }
@@ -28,6 +29,7 @@
 .contacts {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
+  justify-content: center;
   gap: 15px;
 }
 
@@ -51,4 +53,92 @@
   display: flex;
   gap: 24px;
   justify-content: space-between;
+}
+
+.stackList {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 20px;
+}
+
+.toolList {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 20px;
+}
+
+
+@media (768px < width <= 1110px) {
+  .stackList {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+  }
+
+  .cardStats {
+    display: grid;
+    gap: 24px;
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .aboutMe {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .toolList {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+  }
+}
+
+@media (400px <= width <= 768px) {
+  .stackList {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+  }
+
+  .cardStats {
+    display: grid;
+    gap: 24px;
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .aboutMe {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .toolList {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+  }
+}
+
+@media (width < 400px) {
+  .stackList {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+  }
+  .cardStats {
+    display: grid;
+    gap: 64px;
+    grid-template-columns: repeat(1, 1fr);
+  }
+  .aboutMe {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .contacts {
+    display: flex;
+    flex-direction: column;
+  }
+  .toolList {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+  }
 }

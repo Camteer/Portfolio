@@ -112,10 +112,21 @@ body {
   justify-content: center;
 }
 
+.div__status {
+  width: 0;
+  transition-property: width;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-duration: 1000ms;
+}
+
 @layer utilities {
   .text-balance {
     text-wrap: balance;
   }
+}
+
+.tool_text { 
+  font-size: clamp(1.125rem, 0.9733rem + 0.6472vw, 1.75rem);
 }
 
 @media (728px <= width < 1024px) {
