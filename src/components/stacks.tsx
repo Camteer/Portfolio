@@ -19,7 +19,6 @@ export const Stacks: FC<StackProps> = ({
     threshold: 0.1,
   });
 
-  // Вычисляем итоговую ширину в процентах
   const width = inView ? scaleWidth : initialWidth;
 
   return (
