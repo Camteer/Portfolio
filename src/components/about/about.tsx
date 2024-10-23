@@ -15,12 +15,19 @@ import {
 } from "lucide-react";
 import { Stacks } from "../stacks";
 import { Tool } from "../tools";
+import {
+  Carousel,
+  CarouselContent,
+  CarouselItem,
+  CarouselNext,
+  CarouselPrevious,
+} from "../ui/carousel";
 
 export const About: FC = ({}) => {
   return (
     <>
       <Container>
-        <div className={cn("flex justify-center flex-col items-center")}>
+        <div className={cn("flex justify-center flex-col items-center mb-[50px]")}>
           <Section title="Обо мне" subtitle="Узнайте больше обо мне">
             <div className={cn(style.aboutMe)}>
               <div className={cn(style.aboutMeAvatar)}>
@@ -241,6 +248,30 @@ export const About: FC = ({}) => {
                 </p>
               </Tool>
             </div>
+          </Section>
+          <Section title="Сертификаты">
+            <Carousel className="w-full ">
+              <CarouselContent className="-ml-1">
+                {Array.from({ length: 5 }).map((_, index) => (
+                  <CarouselItem
+                    key={index}
+                    className="pl-1 md:basis-1/2 lg:basis-1/3"
+                  >
+                    <div className="p-1">
+                      <div>
+                        <div className="flex aspect-square items-center justify-center p-6 bg-red-400">
+                          <span className="text-2xl font-semibold">
+                            {index + 1}
+                          </span>
+                        </div>
+                      </div>
+                    </div>
+                  </CarouselItem>
+                ))}
+              </CarouselContent>
+              <CarouselPrevious className="border-none bg-transparent w-[5rem] h-[5rem]" />
+              <CarouselNext className="border-none bg-transparent w-[5rem] h-[5rem]" />
+            </Carousel>
           </Section>
         </div>
       </Container>

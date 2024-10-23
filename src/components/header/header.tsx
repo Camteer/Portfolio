@@ -10,26 +10,33 @@ export const Header: FC = ({}) => {
   return (
     <>
       <header className={cn(style.header)}>
-        <div className={cn(style.headerNav, "flex justify-between font-inter font-normal")}>
-          <span>
-            <Link href={"/"}>Eugene pavlov</Link>
-          </span>
-          <Fade cascade triggerOnce>
-            <ul className={cn("flex justify-between gap-10")}>
-              <li>
-                <Link href={"/"}>/main</Link>
-              </li>
-              <li>
-                <Link href={"/about"}>/about</Link>
-              </li>
-              <li>
-                <Link href={"/portfolio"}>/portfolio</Link>
-              </li>
-              <li>
-                <Link href={"/contacts"}>/contacts</Link>
-              </li>
-            </ul>
-          </Fade>
+        <div
+          className={cn(
+            style.headerNav,
+            "flex justify-center font-inter font-normal"
+          )}
+        >
+          <div className={cn('flex justify-between w-full max-w-[1440px] px-4')}>
+            <span>
+              <Link href={"/"}>Eugene pavlov</Link>
+            </span>
+            <Fade cascade triggerOnce>
+              <ul className={cn("flex justify-between gap-10")}>
+                <li>
+                  <Link href={"/"}>/main</Link>
+                </li>
+                <li>
+                  <Link href={"/about"}>/about</Link>
+                </li>
+                <li>
+                  <Link href={"/portfolio"}>/portfolio</Link>
+                </li>
+                <li>
+                  <Link href={"/contacts"}>/contacts</Link>
+                </li>
+              </ul>
+            </Fade>
+          </div>
         </div>
       </header>
     </>
