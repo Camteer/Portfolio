@@ -22,3 +22,15 @@
   align-items: center;
   min-height: calc(100vh - 62px);
 }
+
+@media (768px < width <= 1110px) {
+  
+}
+
+@media (400px <= width <= 768px) {
+  
+}
+
+@media (width < 400px) {
+ 
+}

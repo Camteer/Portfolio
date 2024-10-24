@@ -5,7 +5,8 @@ import { Container } from "../container";
 import { cn } from "@/utils/utils";
 import style from "./portfolio.module.css";
 import { Section } from "../section";
-import Image from "next/image";
+import { PortfolioCard } from "../portfolio-card";
+
 
 export const Portfolio: FC = ({}) => {
   return (
@@ -13,25 +14,31 @@ export const Portfolio: FC = ({}) => {
       <Container>
         <Section title="Портфолио" subtitle="Мои Работы / Заказы">
           <div className={cn(style.container, "mt-4")}>
-            <div
-              className={cn(
-                "bg-cover bg-no-repeat transition-all bg-center w-full flex justify-center items-center aspect-[1.3] rounded-[26px]",
-                style.containerItem
-              )}
-              style={{ backgroundImage: "url(./portfolio.item.png)" }}
-            >
-              <div
-                className={cn(" absolute z-10", style.containerItemCover)}
-              ></div>
-              <div className={cn("flex flex-col justify-center items-center gap-5", style.itemInfo)}>
-                <p>Name</p>
-                <div className={cn('flex gap-5')}>
-                    <div className={cn('border rounded-[10px] p-2 text-center ')}>. . .</div>
-                    <div className={cn('border rounded-[10px] p-2 text-center')}>DEMO</div>
-                    <div className={cn('border rounded-[10px] p-2 text-center')}>{'</>'}</div>
-                </div>
-              </div>
-            </div>
+            <PortfolioCard
+              name={"Portfolio"}
+              url={"https://github.com/Camteer"}
+              demo={"https://github.com/Camteer"}
+              description={"Сайт рассказывает обо мне и демонстрирует мои работы."}
+              stacks={["next", ' rest']}
+              img={"./portfolio.item.png"}
+            ></PortfolioCard>
+            <PortfolioCard
+              name={"Portfolio"}
+              url={""}
+              demo={""}
+              description={""}
+              stacks={["next", 'rest']}
+              img={"./portfolio.item.png"}
+            ></PortfolioCard>
+            <PortfolioCard
+              name={"Portfolio"}
+              url={""}
+              demo={""}
+              description={""}
+              stacks={["next"]}
+              img={"./portfolio.item.png"}
+            ></PortfolioCard>
+            
           </div>
         </Section>
       </Container>
