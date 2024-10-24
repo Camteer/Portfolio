@@ -1,10 +1,11 @@
-import { Portfolio } from "@/components/portfolio/portfolio";
+import { Contacts } from "@/components";
+
 
 
 export default function ContactPage() {
   return (
     <>
-      <Portfolio></Portfolio>
+      <Contacts></Contacts>
     </>
   );
 }
